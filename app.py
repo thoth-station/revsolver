@@ -60,7 +60,7 @@ def do_solve(package_name: str, package_version: str) -> List[Dict[str, Any]]:
 
         start_offset = 0
         while True:
-            dependents = graph.get_dependents(
+            dependents = graph.get_python_package_version_dependents_all(
                 package_name=package_name,
                 os_name=solver_info["os_name"],
                 os_version=solver_info["os_version"],
