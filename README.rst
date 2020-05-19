@@ -15,6 +15,8 @@ base is up to date - considering releases.
 
 This is tightly bound to over-pinning and under-pinning issues often seen in Python packages.
 
+See `this intro video for more info <https://www.youtube.com/watch?v=bpDzi_Jaj4M>`__.
+
 Running the reverse solver locally
 ==================================
 
