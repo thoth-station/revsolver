@@ -156,7 +156,7 @@ def _print_version(ctx, _, value):
     "-o",
     type=str,
     metavar="OUTPUT",
-    envvar="THOTH_ADVISER_OUTPUT",
+    envvar="THOTH_REVSOLVER_OUTPUT",
     default="-",
     show_default=True,
     help="Output file or remote API to print results to, in case of URL a POST request is issued.",
