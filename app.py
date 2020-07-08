@@ -36,7 +36,8 @@ from thoth.storages import __version__ as __storages__version__
 
 
 __title__ = "thoth-revsolver"
-__version__ = f"0.1.0+storage.{__storages__version__}.common.{__common__version__}"
+__version__ = "0.1.0"
+__component_version__ = f"{__version__}+storage.{__storages__version__}.common.{__common__version__}"
 
 init_logging()
 
@@ -116,7 +117,7 @@ def _print_version(ctx, _, value):
     if not value or ctx.resilient_parsing:
         return
 
-    click.echo(__version__)
+    click.echo(__component_version__)
     ctx.exit()
 
 
@@ -181,7 +182,7 @@ def cli(
         _LOGGER.setLevel(logging.DEBUG)
 
     _LOGGER.debug("Debug mode is on")
-    _LOGGER.debug("Version: %s", __version__)
+    _LOGGER.debug("Version: %s", __component_version__)
 
     start_time = time.monotonic()
 
@@ -191,7 +192,7 @@ def cli(
         click_ctx,
         result,
         analyzer=__title__,
-        analyzer_version=__version__,
+        analyzer_version=__component_version__,
         output=output,
         duration=time.monotonic() - start_time,
         pretty=not no_pretty,
