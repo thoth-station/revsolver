@@ -43,7 +43,7 @@ init_logging()
 
 
 _LOGGER = logging.getLogger("thoth.revsolver")
-_QUERY_COUNT = os.getenv("THOTH_REVSOLVER_QUERY_COUNT", GraphDatabase.DEFAULT_COUNT)
+_QUERY_COUNT = int(os.getenv("THOTH_REVSOLVER_QUERY_COUNT", GraphDatabase.DEFAULT_COUNT))
 
 
 def do_solve(package_name: str, package_version: str) -> List[Dict[str, Any]]:
