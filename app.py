@@ -36,7 +36,7 @@ from thoth.storages import __version__ as __storages__version__
 
 
 __title__ = "thoth-revsolver"
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __component_version__ = f"{__version__}+storage.{__storages__version__}.common.{__common__version__}"
 
 init_logging()
