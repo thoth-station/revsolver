@@ -57,7 +57,7 @@ def do_solve(package_name: str, package_version: str) -> List[Dict[str, Any]]:
     for solver_name in openshift.get_solver_names():
         _LOGGER.info("Obtaining dependencies for environment used by solver %r", solver_name)
 
-        solver_info = graph.parse_python_solver_name(solver_name)
+        solver_info = openshift.parse_python_solver_name(solver_name)
 
         start_offset = 0
         while True:
