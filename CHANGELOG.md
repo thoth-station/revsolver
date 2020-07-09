@@ -20,3 +20,7 @@
 * Change query name
 * Fix changelog headline
 * Initial implementation
+
+## Release 0.2.1 (2020-07-09T06:50:11)
+* Query count is an integer (#16)
+* Parsing of solver name has been moved to OpenShift class (#15)
