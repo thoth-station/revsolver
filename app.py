@@ -103,11 +103,11 @@ def do_solve(package_name: str, package_version: str) -> List[Dict[str, Any]]:
                     }
                 )
 
-            if len(dependents) < _QUERY_COUNT:
+            if len(dependents) < int(_QUERY_COUNT):
                 break
 
             # Adjust for the next round.
-            start_offset += _QUERY_COUNT
+            start_offset += int(_QUERY_COUNT)
 
     return result
 
