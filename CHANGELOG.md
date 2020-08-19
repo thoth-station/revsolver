@@ -24,3 +24,12 @@
 ## Release 0.2.1 (2020-07-09T06:50:11)
 * Query count is an integer (#16)
 * Parsing of solver name has been moved to OpenShift class (#15)
+
+## Release 0.2.2 (2020-08-19T18:24:08)
+* :pushpin: Automatic update of dependency thoth-storages from 0.25.1 to 0.25.2 (#28)
+* :pushpin: Automatic update of dependency thoth-storages from 0.24.3 to 0.25.1 (#25)
+* :pushpin: Automatic update of dependency thoth-python from 0.10.0 to 0.10.1 (#24)
+* :pushpin: Automatic update of dependency thoth-storages from 0.24.3 to 0.25.1 (#23)
+* :pushpin: Automatic update of dependency thoth-common from 0.14.1 to 0.16.1 (#22)
+* :pushpin: Automatic update of dependency thoth-storages from 0.24.2 to 0.24.3 (#20)
+* enable pre-commit support for the application (#19)
