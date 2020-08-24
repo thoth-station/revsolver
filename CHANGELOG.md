@@ -33,3 +33,6 @@
 * :pushpin: Automatic update of dependency thoth-common from 0.14.1 to 0.16.1 (#22)
 * :pushpin: Automatic update of dependency thoth-storages from 0.24.2 to 0.24.3 (#20)
 * enable pre-commit support for the application (#19)
+
+## Release 0.2.3 (2020-08-24T05:41:11)
+* :pushpin: Automatic update of dependency thoth-storages from 0.25.2 to 0.25.5 (#32)
