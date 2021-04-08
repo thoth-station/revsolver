@@ -124,7 +124,11 @@ def _print_version(ctx, _, value):
 @click.command()
 @click.pass_context
 @click.option(
-    "-v", "--verbose", is_flag=True, envvar="THOTH_REVSOLVER_VERBOSE", help="Be verbose about what's going on.",
+    "-v",
+    "--verbose",
+    is_flag=True,
+    envvar="THOTH_REVSOLVER_VERBOSE",
+    help="Be verbose about what's going on.",
 )
 @click.option(
     "--version",
