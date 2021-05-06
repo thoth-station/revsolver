@@ -36,3 +36,15 @@
 
 ## Release 0.2.3 (2020-08-24T05:41:11)
 * :pushpin: Automatic update of dependency thoth-storages from 0.25.2 to 0.25.5 (#32)
+
+## Release 0.2.4 (2021-05-06T20:23:22)
+### Features
+* :arrow_up: Automatic update of dependencies by Kebechet (#46)
+* :arrow_up: Automatic update of dependencies by Kebechet
+* :arrow_up: Automatic update of dependencies by kebechet. (#41)
+* set back v0.20.1 (#40)
+* :package: update aicoe-ci configuration for revsolver (#38)
+* update .thoth.yaml (#36)
+* port to python 38 (#35)
+### Improvements
+* :robot: ci updates w.r.t prow and aicoe-ci (#44)
