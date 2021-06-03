@@ -48,3 +48,8 @@
 * port to python 38 (#35)
 ### Improvements
 * :robot: ci updates w.r.t prow and aicoe-ci (#44)
+
+## Release 0.2.5 (2021-06-03T17:38:56)
+### Features
+* :arrow_up: Automatic update of dependencies by Kebechet
+* Add standard GitHub templates
