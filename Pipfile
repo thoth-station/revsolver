@@ -11,6 +11,7 @@ thoth-storages = "*"
 click = "*"
 thoth-analyzer = "*"
 thoth-python = "*"
+prometheus-client = "*"
 
 [requires]
 python_version = "3.8"
