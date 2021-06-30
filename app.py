@@ -33,6 +33,7 @@ from thoth.common import __version__ as __common__version__
 from thoth.python import PackageVersion
 from thoth.storages import GraphDatabase
 from thoth.storages import __version__ as __storages__version__
+from prometheus_client import Gauge, CollectorRegistry, push_to_gateway
 
 
 __title__ = "thoth-revsolver"
@@ -44,6 +45,19 @@ init_logging()
 
 _LOGGER = logging.getLogger("thoth.revsolver")
 _QUERY_COUNT = int(os.getenv("THOTH_REVSOLVER_QUERY_COUNT", GraphDatabase.DEFAULT_COUNT))
+
+# metrics
+THOTH_METRICS_PUSHGATEWAY_URL = os.getenv("PROMETHEUS_PUSHGATEWAY_URL")
+THOTH_DEPLOYMENT_NAME = os.getenv("THOTH_DEPLOYMENT_NAME")
+
+PROMETHEUS_REGISTRY = CollectorRegistry()
+
+database_schema_revision_script = Gauge(
+    "thoth_database_schema_revision_script",
+    "Thoth database schema revision from script",
+    ["component", "revision", "env"],
+    registry=PROMETHEUS_REGISTRY,
+)
 
 
 def do_solve(package_name: str, package_version: str) -> List[Dict[str, Any]]:
@@ -121,6 +135,30 @@ def _print_version(ctx, _, value):
     ctx.exit()
 
 
+def _send_metrics():
+    """Send metrics to pushgateway."""
+    if THOTH_DEPLOYMENT_NAME:
+        database_schema_revision_script.labels(
+            "revsolver", GraphDatabase().get_script_alembic_version_head(), THOTH_DEPLOYMENT_NAME
+        ).inc()
+    else:
+        _LOGGER.warning("THOTH_DEPLOYMENT_NAME env variable is not set.")
+
+    if THOTH_METRICS_PUSHGATEWAY_URL and THOTH_DEPLOYMENT_NAME:
+        try:
+            _LOGGER.debug("Submitting metrics to Prometheus pushgateway %r", THOTH_METRICS_PUSHGATEWAY_URL)
+            push_to_gateway(
+                THOTH_METRICS_PUSHGATEWAY_URL,
+                job="revsolver",
+                registry=PROMETHEUS_REGISTRY,
+            )
+        except Exception as e:
+            _LOGGER.exception("An error occurred pushing the metrics: %s", str(e))
+
+    else:
+        _LOGGER.warning("PROMETHEUS_PUSHGATEWAY_URL env variable is not set.")
+
+
 @click.command()
 @click.pass_context
 @click.option(
@@ -187,6 +225,8 @@ def cli(
 
     _LOGGER.debug("Debug mode is on")
     _LOGGER.debug("Version: %s", __component_version__)
+
+    _send_metrics()
 
     start_time = time.monotonic()
 
