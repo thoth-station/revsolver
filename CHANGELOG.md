@@ -53,3 +53,8 @@
 ### Features
 * :arrow_up: Automatic update of dependencies by Kebechet
 * Add standard GitHub templates
+
+## Release 0.2.6 (2021-07-01T03:04:03)
+### Features
+* :arrow_up: Automatic update of dependencies by Kebechet
+* :arrow_up: Automatic update of dependencies by Kebechet
