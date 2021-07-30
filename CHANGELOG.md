@@ -58,3 +58,10 @@
 ### Features
 * :arrow_up: Automatic update of dependencies by Kebechet
 * :arrow_up: Automatic update of dependencies by Kebechet
+
+## Release 0.2.7 (2021-07-30T10:39:20)
+### Features
+* :arrow_up: Automatic update of dependencies by Kebechet (#64)
+* :arrow_up: Automatic update of dependencies by Kebechet
+* Expose metrics with pushgateway
+* Add library
