@@ -1,5 +1,9 @@
 # Changelog for Thoth's reverse solver
 
+## Release 0.2.8 (2021-09-14T20:44:57)
+### Features
+* Update of the dependencies
+
 ## [0.1.0] - 2020-Apr-22 - fridex
 
 ### Initial project import
