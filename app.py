@@ -37,7 +37,7 @@ from prometheus_client import Gauge, CollectorRegistry, push_to_gateway
 
 
 __title__ = "thoth-revsolver"
-__version__ = "0.2.8"
+__version__ = "0.2.9"
 __component_version__ = f"{__version__}+storage.{__storages__version__}.common.{__common__version__}"
 
 init_logging()

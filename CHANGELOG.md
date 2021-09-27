@@ -1,5 +1,9 @@
 # Changelog for Thoth's reverse solver
 
+## Release 0.2.9 (2021-09-27T20:56:54)
+### Features
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+
 ## Release 0.2.8 (2021-09-14T20:44:57)
 ### Features
 * Update of the dependencies
