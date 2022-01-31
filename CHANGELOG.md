@@ -1,5 +1,13 @@
 # Changelog for Thoth's reverse solver
 
+## Release 0.2.11 (2022-01-31T21:55:12)
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* Update pyproject.toml to use Python 3.8 (#81)
+* :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+
 ## Release 0.2.10 (2021-11-08T12:09:04)
 * :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
 
