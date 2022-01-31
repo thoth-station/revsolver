@@ -1,6 +1,14 @@
 Thoth's reverse solver
 ----------------------
 
+.. image:: https://img.shields.io/github/v/tag/thoth-station/revsolver?style=plastic
+  :target: https://github.com/thoth-station/revsolver/tags
+  :alt: GitHub tag (latest by date)
+
+.. image:: https://quay.io/repository/thoth-station/revsolver/status
+  :target: https://quay.io/repository/thoth-station/revsolver?tab=tags
+  :alt: Quay - Build
+
 A reverse solver implementation for project Thoth.
 
 Thoth's `solver <https://github.com/thoth-station/solver>`_ can resolve requirements
