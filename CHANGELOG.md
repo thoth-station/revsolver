@@ -1,5 +1,14 @@
 # Changelog for Thoth's reverse solver
 
+## Release 0.2.12 (2022-05-09T19:39:05)
+* 31a4111 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment (#100)
+* 3b00611 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* 9c457b5 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* 0f99f44 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+* c3297cf Update pre-commit configuration (#96)
+* 60d3beb :ship: Bump up base image initialized in CI.
+* 3db31ab :medal_sports: set badges for easy access to content
+
 ## Release 0.2.11 (2022-01-31T21:55:12)
 * :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
 * :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
