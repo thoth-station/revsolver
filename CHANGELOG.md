@@ -1,5 +1,10 @@
 # Changelog for Thoth's reverse solver
 
+## Release 0.2.13 (2022-08-23T02:51:47)
+* 7820518 :ship: Bump up base image initialized in CI. (#107)
+* e97e4c9 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment (#106)
+* 8f9c05e :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
+
 ## Release 0.2.12 (2022-05-09T19:39:05)
 * 31a4111 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment (#100)
 * 3b00611 :arrow_up: Automatic update of dependencies by Kebechet for the ubi8 environment
